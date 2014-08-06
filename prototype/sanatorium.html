@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Picker -->
+        <link rel="stylesheet" href="js/picker/css/default.css">
+        <link rel="stylesheet" href="js/picker/css/default.date.css">
+        <!-- Base css style -->
+        <link rel="stylesheet" href="css/base.css">
+
+         <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    </head>
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Header -->
+        <header class="main-header">
+
+            <head>
+                <div class="mid">
+                    <a href="#" class="header-logo"></a>
+                    <div class="block"> <!-- block -->
+                        <div class="header-orgName">
+                            <h1>Медицинский центр Управления делами Мэра и Правительства Москвы</h1>
+                        </div>
+
+                        <nav class="header-nav">
+                            <a href="#">Личный кабинет</a>
+                            <a href="#">О компании</a>
+                            <a href="#">Санатории</a>
+                            <a href="#">Детские сады</a>
+                            <a href="#">Медицина</a>
+                        </nav>
+                    </div>
+
+                    <div class="block"> <!-- block -->
+                        <div class="header-search">
+                            <input type="text" placeholder="Поиск">
+                            <input type="submit" value="">
+                        </div>
+                        <div class="contacts">
+                            Контакты: <br/>
+                            (495) 660-53-63
+                        </div>
+                    </div>
+
+                </div>
+            </head>
+
+            <footer>
+                <div class="mid">
+                    <nav class="footer-nav">
+                        <a href="#">Услуги:</a>
+                        <a href="#">Отдых</a>
+                        <a href="#">Диагностика</a>
+                        <a href="#">Профилактика</a>
+                        <a href="#">Лечение</a>
+                        <a href="#">Реабилитация</a>
+                    </nav>
+                </div>
+            </footer>
+
+        </header>
+        <!-- end Header -->
+
+        <!-- firstBlock -->
+        <section class="firstBlock">
+            <div class="mid">
+                <!-- form -->
+                <div class="formBro" id="formBro">
+                    <h2>Бронирование номеров</h2>
+                    <form>
+                    <!-- Select -->
+                    <div class="selectSanatorium">
+                        <div class="frame">
+                            <div class="scrollbar">
+                                <div class="handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                        <span>Санаторий:</span>
+                        <select class="bro sparkbox-custom">
+                          <option value="zvenigorod">Звенигород</option>
+                          <option value="volna">Волна</option>
+                          <option value="litvinovo">Литвиново</option>
+                          <option value="ozeroBeloe">Озеро Белое</option>
+                          <option value="Ponizovka">Серебрянный бор</option>
+                          <option value="Mellas">Меллас</option>
+                          <option value="Ponizovka">Первомайский</option>
+                          <option value="Ponizovka">Адлер</option>
+                          <option value="Ponizovka">Изумруд</option>
+                          <option value="Ponizovka">Ореховая Роща</option>
+                          <option value="Ponizovka">Хатинь Бор</option>
+                          <option value="Artema">
+Санаторий им. Артёма (Сергеева)</option>
+                        </select>
+                    <!-- Select -->
+
+                    <div class="entry">
+                        Заезд:
+                        <br /><input class="picker" type="date">
+                    </div>
+
+                    <div class="exit">
+                        Отъезд:
+                        <br /><input class="picker" type="date">
+                    </div>
+
+                    <h3>Номера</h3>
+                        <span class="addRoom">+Добавить номер</span>
+                        <div class="rooms">
+                            <div class="room">
+                                <span>Номер </span>
+                                <div class="ageInput">Взрослых: <input type="number"min="0"></div>
+                                <div class="childrensInput">Детей: <input type="number" min="0"></div>
+                                    <div class="childrensAge">
+                                        Возраст детей:<br />
+                                        <span>1й ребенок</span><input min="0" type="number">
+                                    </div>
+                                <div style="clear:both"></div>
+                                <span class="roomDel">Удалить</span>
+                            </div>
+                        </div>
+
+                        <input type="submit" class="searchButton" value="Найти">
+
+                    </form>
+
+
+                    <!-- variants -->
+                        <div class="variants">
+                            <h2>Варианты</h2><span class="close">х</span>
+                            <div class="bestChoice choice">
+                                <h3>Рекомендуемый вариант</h3>
+                                <a href="#" class="variant">
+                                <!-- table -->
+                                <div class="row">
+                                    <div class="num">Номер</div>
+                                    <div class="variant-room">Полулюкс 1х местный</div>
+                                    <div class="cost">9000 Р</div>
+                                    <!-- addBed -->
+                                    <div class="row add">
+                                        <div class="addBed">+ дополнительеная кровать</div>
+                                        <div class="bedCost">+450 Р</div>
+                                    </div>
+                                </div> <!-- end row -->
+                                <div class="row">
+                                    <div class="num">Номер</div>
+                                    <div class="variant-room">Полулюкс 2х местный</div>
+                                    <div class="cost">9000 Р</div>
+                                    
+                                </div> <!-- end row -->
+
+                                  <!-- new line -->
+                                    <div class="finalCost">
+                                        <div class="allCost">Итого:</div>
+                                        <div class="endCost">18 450 Р</div> 
+                                    </div>
+
+                                    <a href="#" class="broBtn">Бронировать</a>
+                                </a><!-- end variant -->
+
+                            </div><!-- end bestChoice -->
+
+                            <div class="otherChoice choice">
+                            <h3>Другое размещение</h3>
+                                <div class="variant">
+                                <!-- table -->
+                                <div class="row">
+                                    <div class="num">Номер</div>
+                                    <div class="variant-room">Полулюкс 1х местный</div>
+                                    <div class="cost">9000 Р</div>
+                                    <!-- addBed -->
+                                    <div class="row add">
+                                        <div class="addBed">+ дополнительеная кровать</div>
+                                        <div class="cost">+450 Р</div>
+                                    </div>
+                                </div> <!-- end row -->
+
+                                  <!-- new line -->
+                                    <div class="finalCost">
+                                        <div class="allCost">Итого:</div>
+                                        <div class="endCost">18 450 Р</div> 
+                                    </div>
+                                    <a href="#" class="broBtn">Бронировать</a>
+                                </div><!-- end variant -->
+
+                            </div><!-- end otherChoice" -->
+
+                        </div><!-- end variants -->
+
+                </div>
+                <div class="infoBlock">
+                        <h2>Санаторий: </h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+             <div style="clear:both; margin-bottom:20px;"></div>
+            </section> <!-- firstBlock -->
+
+
+            <section class="footerMenu"> <!-- footerMenu -->
+                <div class="mid">
+                    <nav class="about">
+                        <h3>О компании</h3>
+                        <a href="#">О медецинском центре</a>
+                        <a href="#">Вакансии</a>
+                        <a href="#">Новости</a>
+                    </nav>
+
+                    <nav class="sanatorium">
+                        <h3>Санатории</h3>
+                        <a href="#">Санаторий "Волна"</a>
+                        <a href="#">Санаторий "Звенигород"</a>
+                        <a href="#">Санаторий "Озеро белое"</a>
+                        <a href="#">Санаторий "Понизовка"</a>
+                        <a href="#">Санаторий им. Артёма (Сергеева)</a>
+                        <a href="#">Санаторий Первомайский</a>
+                        <a href="#">Санаторий Ореховая Роща</a>
+                        <a href="#">Санаторий им. Т.Г. Шевченко</a>
+                    </nav>
+                    <nav class="kindergartens">
+                        <h3>Детские сады</h3>
+                        <a href="#">№ 395</a>
+                        <a href="#">№ 339</a>
+                    </nav>
+                    <nav class="medecine">
+                        <h3>Медецина</h3>
+                        <a href="#">Лечение в стационаре</a>
+                        <a href="#">Амбулаторное лечение</a>
+                        <a href="#">Санаторно-курортное лечение</a>
+                    </nav>
+                    <nav class="service">
+                        <h3>Услуги</h3>
+                        <a href="#">Отдых</a>
+                        <a href="#">Диагностика</a>
+                        <a href="#">Профилактика</a>
+                        <a href="#">Лечение</a>
+                        <a href="#">Реабилитация</a>
+                    </nav>
+                    <nav class="offers">
+                        <h3>Предложения</h3>
+                        <a href="#">Все специальные предложения</a>
+                    </nav>
+                    <nav class="contacts">
+                        <h3>Контакты</h3>
+                        <a href="#">Электронная приемная</a>
+                    </nav>
+
+                </div>
+                <div style="clear:both;"></div>
+            </section><!-- end footerMenu -->
+        
+           <footer class="main-footer"> <!-- footer --> 
+               <div class="mid">
+                   <section class="info">
+                       2014 Меицинский центр Управления делами Мэра и Правительства Москвы
+                       <p><a href="#">Разработка сайта Tanais Gr</a></p>
+                   </section>
+                   
+                   <section class="stat">
+                       Счетчики статистики
+                   </section>
+               </div>
+           </footer> <!-- end footer --> 
+                
+
+   
+    <!-- select -->
+    <script src="js/jquery.sparkbox-select.js"></script>
+    
+    <script src="js/sly.min.js"></script>
+    <!-- picker --> <!-- WIP -->
+    <script src="js/picker/picker.js"></script>
+    <script src="js/picker/picker.date.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/form_action.js"></script>
+
+    <script src="js/select.js"></script>
+
+    </body>
+</html>
